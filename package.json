@@ -1,0 +1,49 @@
+{
+  "name": "fram",
+  "version": "0.0.1",
+  "description": "Small, domain specific language for Framer, transpiles to CoffeeScript.",
+  "main": "index.js",
+  "directories": {
+    "example": "grammar/examples"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha --require ts-node/register --watch-extensions ts \"test/**/*.ts\"",
+    "build-grammar": "antlr4ts -visitor grammar/FramParser.g4 -o lib/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danigulyas/fram.git"
+  },
+  "keywords": [
+    "fram",
+    "framer",
+    "transpiler",
+    "dsl"
+  ],
+  "author": "Daniel Gulyas <hello@danielgulyas.me> (http://danielgulyas.me/)",
+  "license": "UNLICENSE",
+  "bugs": {
+    "url": "https://github.com/danigulyas/fram/issues"
+  },
+  "homepage": "https://github.com/danigulyas/fram#readme",
+  "devDependencies": {
+    "antlr4ts-cli": "^0.4.0-alpha.4",
+    "chai": "^4.1.2",
+    "mocha": "^5.0.1",
+    "ts-node": "^4.1.0",
+    "tsc": "^1.20150623.0",
+    "typescript": "^2.7.1"
+  },
+  "dependencies": {
+    "@types/chai": "^4.1.2",
+    "@types/escodegen": "0.0.6",
+    "@types/estree": "0.0.38",
+    "@types/mocha": "^2.2.48",
+    "@types/node": "^9.4.6",
+    "antlr4ts": "^0.4.1-alpha.0",
+    "astring": "^1.2.0",
+    "escodegen": "^1.9.0",
+    "lodash": "^4.17.5"
+  }
+}

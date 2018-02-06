@@ -1,0 +1,5 @@
+// Context: playButton is an visible layer
+
+when playButton is clicked {
+    animate playButton: set opacity to 0% in 80ms;
+}

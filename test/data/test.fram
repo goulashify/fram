@@ -1,0 +1,9 @@
+fastTime is 50ms;
+animate playButton: set opacity to 100% in fastTime;
+
+when playButton is clicked {
+  animate playButton: set opacity to 100% in fastTime;
+  when playButton is clicked {
+    animate playButton: set opacity to 100% in fastTime;
+  }
+}

@@ -1,0 +1,13 @@
+// Comments are like this.
+
+// Variables can be declared.
+fastTime is 50ms;
+
+// We can do animation calls, playButton is a layer, opacity is a property of it.
+animate playButton: set opacity to 100% in fastTime;
+
+// We can create listeners.
+when playButton is clicked {
+    // Will be executed when playButton receives a click.
+    animate playButton: set opacity to 0% in fastTime;
+}

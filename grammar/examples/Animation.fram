@@ -1,0 +1,3 @@
+// Context: playButton is a visible layer
+
+animate playButton: set opacity to 70%, color to "AliceBlue" in 250ms;
